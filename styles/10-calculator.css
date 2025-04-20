@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+    color: white;
+}
+        .display {
+            font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        }
+        .num-btn {
+          border: none;
+          
+          height: 65px;
+          width: 65px;
+          margin: 5px;
+          border-radius: 50%;
+          font-weight: bold;
+          background-color: rgb(51, 51, 51);
+          color: white;
+          font-size: 23px;
+          cursor: pointer;
+        }
+        .calc-btn {
+            background-color: #fea00a;
+        }
