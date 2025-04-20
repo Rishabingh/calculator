@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+<link rel="stylesheet" href="styles/10-calculator.css">
+</head>
+<body>
+    <p class="displayCalc display">0</p>
+    <button onclick="updateCalculation('1');" class="num-btn">1</button>
+    <button onclick="updateCalculation('2');" class="num-btn">2</button>
+    <button onclick="updateCalculation('3');" class="num-btn">3</button>
+    <button onclick="updateCalculation(' + ');" class="num-btn calc-btn">+</button>
+    <br>
+    <button onclick="updateCalculation('4');" class="num-btn">4</button>
+    <button onclick="updateCalculation('5');" class="num-btn">5</button>
+    <button onclick="updateCalculation('6');" class="num-btn">6</button>
+    <button onclick="updateCalculation(' - ');" class="num-btn calc-btn">-</button>
+    <br>
+    <button onclick="updateCalculation('7');" class="num-btn">7</button>
+    <button onclick="updateCalculation('8');" class="num-btn">8</button>
+    <button onclick="updateCalculation('9');" class="num-btn">9</button>
+    <button onclick="updateCalculation(' * ');" class="num-btn calc-btn">*</button>
+    <br>
+    <button onclick="updateCalculation('0');" class="num-btn">0</button>
+    <button onclick="updateCalculation('.');" class="num-btn">.</button>
+    <button onclick="updateCalculation(' / ');" class="num-btn calc-btn">/</button>
+    <button onclick="input = eval(input);  displayCalcEle.innerHTML= input; localStorage.setItem('input', input);" class="num-btn calc-btn">=</button>
+    <br>
+    <button onclick="input='';  displayCalcEle.innerHTML= '0'; localStorage.setItem('input', input);" class="num-btn calc-btn">clear</button>
+
+    <script src="scripts/10-calculator.js">
+</script>
+</body>
+
+</html>
